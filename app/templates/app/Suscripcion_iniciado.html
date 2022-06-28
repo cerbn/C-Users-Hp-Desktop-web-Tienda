@@ -1,0 +1,73 @@
+{% extends 'app/base_iniciado.html' %}
+{% load static %}
+
+
+{% block contenido %}
+
+
+
+
+  
+
+                    <div class="col-sm-10" >
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-10" style="margin-top: 30px;">
+                                    
+                                    <div class="container" style="color: white;">
+                                        <h2>Suscribete</h2>
+                                            
+                                    
+                                    
+                            
+                                        <form action="" method="POST"> 
+                                        {% csrf_token %}
+                                        <input type="hidden" name="username" id="" value="{{ user.username }}">
+                                        <input type="hidden" name="suscrito" id="" value= True>
+                         
+      
+      
+      
+                                
+                                  <input type="submit" style="cursor: pointer; " class="btn btn-success btn-sm ml-auto">
+                                
+                                    </form>                        
+                                                </div>
+
+
+
+                                                <div class="container" style="color: white;">
+                                                    <h2>desuscribete</h2>
+                                                        
+                                                
+                                                
+                                        
+                                                    <form action="" method="POST"> 
+                                                    {% csrf_token %}
+                                                    <input type="hidden" name="username" id="" value="{{ user.username }}">
+                                                    <input type="hidden" name="suscrito" id="" value= False>
+                                     
+                  
+                                            
+                                              <input type="submit" style="cursor: pointer; " class="btn btn-success btn-sm ml-auto">
+                                            
+                                                </form>                                
+                                                                    
+                                                                
+                                                            </div>
+                                            </div>
+                                    
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                        
+                                        <br>
+                                        <br>
+                                        </a>
+    
+                                        
+                                    </div>
+                        
+                
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'app/base_iniciado.html' %}
+{% load static %}
+
+
+{% block contenido %}
+
+
+
+
+
+  
+
+                    <div class="col-sm-10" >
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-10" style="margin-top: 30px;">
+                                    
+                                    <div class="container" style="color: white;">
+                                        <h2>inicia sesion</h2>
+                                            
+                                    
+                                    
+                                            <!-- Modal body -->
+                                            <div class="container">
+                                                <div style="text-align: center;">
+                                                    
+                                                    <form action="" method="POST">
+                                                        {% csrf_token %}
+                                                        {{ form }}
+                                                        <input type="submit" class="btn btn-success">
+                                                    </form>
+                                                    
+            
+            
+                                                     
+                                                    
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="{% url 'usu_ini' %}">
+                                        <button style="background-color: rgb(129, 16, 190); border: none;" class="btn btn-primary" activated>
+                                        <span  class="spinner-grow spinner-grow-sm"></span>
+                                        Volver al Inicio
+                                        </button>
+                                        <br>
+                                        <br>
+                                        </a>
+    
+                                        
+                                    </div>
+                        
+                
+{% endblock %}

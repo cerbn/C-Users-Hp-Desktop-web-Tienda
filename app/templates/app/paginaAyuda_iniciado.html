@@ -1,0 +1,70 @@
+{% extends 'app/base_iniciado.html' %}
+{% load static %}
+
+
+{% block contenido %}
+
+
+
+
+<div class="col-sm-10" >
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10" style="margin-top: 30px;">
+            
+            <div class="container">
+                <h2>Preguntas Frecuentes:</h2>
+                    
+                <dl class="Prg" style="color: white;">
+                    <dt>¿Donde se ubicarn las sucursales?</dt>
+                    <dd>- Nuestras sucursales por el momento solo se encuentran en santiago.</dd>
+                    <br>
+                    <dt>¿Se realizan envios a regiones?</dt>
+                    <dd>- Realizamos envios a todo chile a traves de Chilexpress, Starken, Blue Express, etc.</dd>
+                    <br>
+                    <dt>¿Cuanto tardara mi envio en llegar?</dt>
+                    <dd>- Dependiendo del tamaño o cantidad de productos dentro de santiago de 1 a 2 dias habiles.</dd>
+                    <dd>- A regiones de 5 a 7 dias habiles(*Puede variar segun la comuna).</dd>
+                    <br>
+                    <dt>¿Cuando se ralizan los envios?</dt>
+                    <dd>- Los envios se realizan de lunes a viernes desde las 9:00hrs hasta las 20:00hrs.</dd>
+                    <br>
+                    <dt>No estare en el lugar para recibir el pedido,¿Puede recibirlo por otra persona?</dt>
+                    <dd>- Por supuesto, el o los productos pueden ser recibidos por terceras personas(Familiares, etc).</dd>
+                    <br>
+                    <dt>¿Puedo devolver el producto?</dt>
+                    <dd>- PetShop acepta devoluciones en dos casos:</dd>
+                    <dd>1) El producto tiene defectos.</dd>
+                    <dd>2) El producto no se ajusta a las expectativas o necesidades del cliente.</dd>
+                    <br>
+                    <dt>¿Son productos seguros para mi mascota?</dt>
+                    <dd>- Todos nuestros productos son manufacturados con los mas altos estandares de calidad, para eso nos aseguramos de trabajar con las mejores marcas.</dd>
+                </dl>
+                <br>
+                <br>
+                <br>
+
+        </div>
+        <a href="{% url 'usu_ini' %}">
+
+            <button style="background-color: rgb(129, 16, 190); border: none; margin-left: 20px; color: white;" class="btn btn-primary;" activated>
+            <span  class="spinner-grow spinner-grow-sm"></span>
+            Volver al Inicio
+            </button>
+        <br>
+            </a>
+            <br>
+            
+
+
+    </div>
+    <div class="row">
+        <div class="col-sm-12"></div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+{% endblock %}

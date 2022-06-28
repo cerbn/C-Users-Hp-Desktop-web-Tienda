@@ -1,0 +1,57 @@
+{% extends 'app/base_iniciado.html' %}
+{% load static %}
+
+
+{% block contenido %}
+
+
+<div class="col-sm-10" >
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10" style="margin-top: 30px;">
+            
+            <div class="container" style="color: white;">
+                <h2>Registrate</h2>
+                    
+            
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div style="text-align: center;">
+                          
+                          <form action="" method="POST" enctype="multipart/form-data">
+                              {% csrf_token %}
+                              <table>
+                                {{ forms }}
+                              </table>
+                              <input type="submit" class="btn btn-primary" style="background-color: rgb(117, 30, 167);border: none;" value="Guardar">
+                          </form>  
+                          {{ mensajito }}     
+                          
+                              
+                            
+                        </div>
+                    </div>
+            
+                </div>
+                </div>
+            </div>
+            
+                <a href="Usuario_Iniciado.html">
+                <button class="btn btn-primary" style="background-color: rgb(117, 30, 167); border: none; margin-bottom: 20px;"> 
+                <span class="spinner-grow spinner-grow-sm"></span>
+                Volver al Inicio
+                </button>
+                </a>
+
+                
+            </div>
+              <div class="col-sm-1"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12"></div>
+    </div>
+</div>
+
+{% endblock %}

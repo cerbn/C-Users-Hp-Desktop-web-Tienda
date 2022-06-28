@@ -1,0 +1,105 @@
+.iconos{
+    margin-right: 10px;
+}
+
+.pnav{
+    color: white;
+    background-color: rgb(97, 9, 212);
+}
+
+.fa-brands{
+    font-size: 30px;
+}
+
+.nav-link:hover {
+    background-color: rgb(153, 46, 229);
+    color: white;
+    border-radius: 20%;
+} 
+
+
+.nav-link {
+    color: white;
+} 
+
+.nav-link:hover .material-icons {
+    transition: all 1s;
+    transform: rotate(360deg);
+    font-size: 20px;
+}
+
+.nav-link:hover .fa {
+    transition: all 1s;
+    transform: rotate(360deg);
+    font-size: 20px;
+}
+
+.activo {
+    border-radius: 20;
+    background-color: rgb(153, 46, 229) 
+
+}
+
+.color-izq{
+    background-color: rgb(0, 0, 0);
+}
+
+
+.perfil{
+    background-image: url("../img/rengoku-demon-slayer-aura.gif");
+    background-size: cover;
+    background-position: center;
+}
+hr{
+    color: white;
+}
+a{
+    color: white;
+}
+
+body{
+    background-color: #110f0fea;
+}
+
+.description{
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+}
+
+.description:hover{
+    height: 80px;
+}
+
+.Productos{
+    display: flex;
+}
+
+.Productos > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.Cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.td{
+    color: white;
+}
+
+.Prg{
+    color: paleturquoise;
+}
+
+.imgp {
+   height: 150px;
+}

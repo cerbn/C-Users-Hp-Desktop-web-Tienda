@@ -1,0 +1,57 @@
+{% extends 'app/base_iniciado.html' %}
+{% load static %}
+
+
+{% block contenido %}
+
+
+
+
+
+
+<div class="col-sm-10" >
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10" style="margin-top: 30px;">
+            
+            <div class="container" style="color: white;">
+                <h2>Seguimiento de compra</h2>
+                <p>  </p>            
+                <table class="table table-hover">
+
+                    <div class="form-group">
+                        <label for="txtUser">Ingrese el Codigo de Seguimiento:</label>
+                        <input type="text" placeholder="Ej: 98439849" class="form-control" id="txtUser" name="txtUser">
+                    </div>
+
+
+
+
+                </table>
+
+                <a href="{% url 'usu_ini' %}">
+                    <br>
+                    <br>
+                    <button style="background-color: rgb(129, 16, 190); border: none; margin-left: 20px; color: white;" class="btn btn-primary;" activated>
+                    <span  class="spinner-grow spinner-grow-sm"></span>
+                    Volver al Inicio
+                    </button>
+                    </a>
+
+                <a href="{% url 'seguimiento2' %}"><button style="border: none; background-color: rgb(117, 30, 167);"  class="btn btn-primary" activated>
+                 <span class="spinner-grow spinner-grow-sm"></span>
+                Siguiente
+                </button></a>
+            </div>
+              <div class="col-sm-1"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12"></div>
+    </div>
+</div>
+</div>
+</div>
+
+{% endblock %}
+
